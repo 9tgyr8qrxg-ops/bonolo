@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stash Plumbing & Solutions</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f4f7fb;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #0a2540;
+      color: white;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #4dd0e1;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(10,37,64,.85), rgba(10,37,64,.85)),
+      url("https://images.unsplash.com/photo-1581578731548-c64695cc6952") center/cover;
+      color: white;
+      padding: 130px 8%;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 750px;
+      margin: auto;
+      margin-bottom: 35px;
+      font-size: 1.2rem;
+    }
+
+    .btn {
+      background: #4dd0e1;
+      color: #0a2540;
+      padding: 15px 35px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      margin: 10px;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background: #26c6da;
+    }
+
+    section {
+      padding: 90px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .section-title h3 {
+      font-size: 2.3rem;
+      color: #0a2540;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .service-card {
+      background: white;
+      padding: 40px;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about img {
+      width: 100%;
+      border-radius: 20px;
+    }
+
+    .experience-badge {
+      background: #4dd0e1;
+      color: #0a2540;
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-weight: 700;
+      margin-top: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0,0,0,.1);
+    }
+
+    .location-box {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.08);
+      text-align: center;
+    }
+
+    .map-container {
+      width: 100%;
+      height: 350px;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .contact-box {
+      max-width: 650px;
+      margin: auto;
+      background: white;
+      padding: 50px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    }
+
+    footer {
+      background: #0a2540;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .about {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Stash Plumbing & Solutions</h1>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#location">Location</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Professional Plumbing You Can Trust</h2>
+  <p>Serving homes & businesses with reliable plumbing solutions backed by experience.</p>
+  <a href="tel:0679964415" class="btn">📞 Call Now</a>
+  <a href="https://wa.me/27679964415" class="btn">💬 WhatsApp</a>
+</section>
+
+<section id="services">
+  <div class="section-title"><h3>Our Services</h3></div>
+  <div class="services">
+    <div class="service-card"><h4>Emergency Plumbing</h4><p>24/7 fast response.</p></div>
+    <div class="service-card"><h4>Leak Detection</h4><p>Quick detection & repair.</p></div>
+    <div class="service-card"><h4>Blocked Drains</h4><p>Effective drain solutions.</p></div>
+    <div class="service-card"><h4>Pipe Repair</h4><p>Expert pipe services.</p></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="section-title"><h3>About Us</h3></div>
+  <div class="about">
+    <div>
+      <p><strong>Stash Plumbing & Solutions</strong> delivers professional plumbing services.</p>
+      <span class="experience-badge">✔ 12 Years Experience</span>
+    </div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYkuQ5yNPT7THMt-xdIA-LGisUdHVK-i6YvQ&s" alt="Plumber at work">
+  </div>
+</section>
+
+<!-- ✅ OUR WORK (UPDATED IMAGES) -->
+<section id="gallery">
+  <div class="section-title"><h3>Our Work</h3></div>
+  <div class="gallery">
+    <img src="https://media.istockphoto.com/id/532326974/photo/handyman-repairing-sink-pipe.jpg?s=612x612&w=0&k=20&c=9yB8T3dseAip7va-rZN8DyzbNdeWGfQIy7IZMIdkZWI=" alt="Black plumber fixing pipes">
+    <img src="https://t3.ftcdn.net/jpg/00/17/31/92/360_F_17319259_nW37MzSsJ5FlDgtcR6xO7AesEpNeYLdC.jpg" alt="Professional black plumber at work">
+    <img src="https://www.shutterstock.com/image-photo/attentive-african-plumber-changing-water-260nw-2401297621.jpg" alt="Plumber working on plumbing system">
+  </div>
+</section>
+
+<section id="location">
+  <div class="section-title"><h3>Our Location</h3></div>
+  <div class="location-box">
+    <p>📍 <strong>Dalview, Brakpan, 1541, South Africa</strong></p>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps?q=Dalview,Brakpan,1541,South%20Africa&output=embed"
+        width="100%" height="350" style="border:0;" loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-title"><h3>Contact Us</h3></div>
+  <div class="contact-box">
+    <p>📧 stashplumping19@gmail.com</p>
+    <p>📞 067 996 4415</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Stash Plumbing & Solutions</p>
+</footer>
+
+</body>
+</html>
